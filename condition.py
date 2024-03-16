@@ -17,9 +17,6 @@ elif age == 18:
     print("Hello, %s, you're %d years old. You can now start voting." % (Full_name, age))
 else:
     print("Hello, %s, you're %d years old. You are not eligible to vote." % (Full_name, age))
-
-#IN MY PROGRAM THERE IS NO CHECKING VOTING AGE LIMITS. 
-#THEREFORE WE CAN ESTIMATE THE TIME TAKEN FOR EACH SUCCESIFULL CHECKING IN SECONDS.
 #Let us numpy array to correct and present this data
 import numpy as np
 import pandas as pd
@@ -32,12 +29,11 @@ DatS=pd.Series(names)
 print(DatS)
 print()
 #calculate std,mean,max,count......
-print("Description")      
+print("Descriptionm for DatS")      
 print(DatS.describe())
-#IN MY PROGRAM THERE IS NO CHECKING VOTING AGE LIMITS. 
-#THEREFORE WE CAN ESTIMATE THE TIME TAKEN FOR EACH SUCCESIFULL CHECKING IN SECONDS.
-#Let us numpy array to correct and present this data
-# time 
+#IN MY PROGRAM CHECKING VOTING AGE HAS NO  LIMITS OF ATTEMPTS. 
+#THEREFORE WE CAN ESTIMATE THE TIME TAKEN FOR EACH SUCCESIFULL CHECKING IN SECONDS FOR ANYPERSON FOR THE PAST FEW DAYS.
+#Let us use numpy array to correct and present this data 
 timein_minsecs = np.random.rand(6,4)
 
 # Names of individual who we want to analyse
@@ -52,7 +48,8 @@ Inno_data= pd.DataFrame(timein_minsecs, index=date, columns=Innocent)
 print(Inno_data)
 
 print()
-#calculate std,mean,max,count......      
+#calculate std,mean,max,count......   
+print("Description for Inno_data")   
 print(Inno_data.describe())
 
 
